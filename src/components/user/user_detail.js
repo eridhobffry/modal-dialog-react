@@ -13,6 +13,6 @@ const UserDetail = ({ name, age, job_title, gender, country }) => {
   );
 };
 
-UserDetail.PropTypes = {};
+UserDetail.propTypes = {};
 
 export default UserDetail;

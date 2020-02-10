@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const UserTable = ({ data, setSelected, setModalState }) => {
   UserTable.propTypes = {
-    data: PropTypes.array,
+    // data: PropTypes.array,
     setSelected: PropTypes.func,
     setModalState: PropTypes.func
   };
