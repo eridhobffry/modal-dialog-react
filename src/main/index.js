@@ -1,6 +1,6 @@
 import React from "react";
 import { useModal } from "./hooks";
-import "../App.css";
+import "./App.css";
 import CustomModal from "../components/modal/modal";
 import UserInformation from "../components/user/user_information";
 // import dataUser from "../data";
@@ -49,7 +49,7 @@ const App = () => {
       >
         <h1>Hey</h1>
       </CustomModal>
-      {/* <UserInformation data={data} /> */}
+      <UserInformation data={data} />
     </div>
   );
 };

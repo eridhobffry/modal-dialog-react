@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const UserTable = ({ data, setSelected, setModalState }) => {
-  UserTable.propTypes = {
-    // data: PropTypes.array,
-    setSelected: PropTypes.func,
-    setModalState: PropTypes.func
-  };
+const UserTable = props => {
+  const { data, setSelected, setModalState } = props;
+  console.log(data);
+  //   UserTable.propTypes = {
+  //     // data: PropTypes.array,
+  //     setSelected: PropTypes.func,
+  //     setModalState: PropTypes.func
+  //   };
 
   return (
     <table>
@@ -15,7 +17,7 @@ const UserTable = ({ data, setSelected, setModalState }) => {
           <th>Name</th>
           <th>Age</th>
           <th>Job Title</th>
-          <th>ACtion</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>

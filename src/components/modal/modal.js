@@ -8,17 +8,15 @@ import {
   Title
 } from "bloomer";
 
-const CustomModal = props => {
-  const { isActive, children, title, handleClose } = props;
+const CustomModal = ({ isActive, children, title, handleClose }) => {
   return (
     <Modal isActive={isActive}>
-      <ModalBackground onClick={handleClose}>
-        <ModalContent>
-          <Title isSize={6}>{title}</Title>
-          {children}
-          {isActive}
-        </ModalContent>
-      </ModalBackground>
+      <ModalBackground onClick={handleClose} />
+      <ModalContent>
+        <Title isSize={6}>{title}</Title>
+        {children}
+        {isActive}
+      </ModalContent>
       <ModalClose onClick={handleClose} />
     </Modal>
   );
